@@ -1,0 +1,8 @@
+Original Linked List
+100
+140
+500
+Reversed Linked List 
+500
+140
+100

@@ -1,0 +1,3 @@
+Value of Float 10.0
+valuse of Byte 4.894999999999982
+ Value of Byte 4
