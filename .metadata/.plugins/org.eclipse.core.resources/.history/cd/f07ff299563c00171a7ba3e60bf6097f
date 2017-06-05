@@ -1,0 +1,40 @@
+package managementsoftware;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+class LinkedList
+{
+	 static Node head;
+	static class Node
+	{
+		int data;
+		Node next;
+		Node(int d)
+		{
+			data =d;
+			next = null;
+		}
+	}
+	public static void PrintList(LinkedList node)
+	{
+		while(node != null)
+		{
+		System.out.println("Node data " + node.head);
+
+		}
+	}
+}
+
+public class CommonNodeLinkedList extends LinkedList{
+	public static void main(String[] args)
+	{
+		LinkedList list = new LinkedList();
+		list.head = new Node(10);
+		list.head.next = new Node(20);
+		list.head.next.next = new Node(50);
+		list.head.next.next = new Node(100);
+		PrintList(list);
+		
+	}
+
+}

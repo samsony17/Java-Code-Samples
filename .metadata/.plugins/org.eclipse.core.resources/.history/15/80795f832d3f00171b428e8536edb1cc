@@ -1,0 +1,19 @@
+package managementsoftware;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+class Stack
+{
+	private T data;
+	private StackNode<T> next;
+	public Stack(data)
+	{
+		this.data = data;
+	
+	}
+	
+}
+public class StackArrays {
+
+	
+}

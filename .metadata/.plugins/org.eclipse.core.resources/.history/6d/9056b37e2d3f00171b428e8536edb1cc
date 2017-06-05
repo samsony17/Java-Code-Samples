@@ -1,0 +1,16 @@
+package managementsoftware;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+class Stack
+{
+	private static int head;
+	Stack(int head)
+	{
+		this.head = head;
+	}
+}
+public class StackArrays {
+
+	
+}

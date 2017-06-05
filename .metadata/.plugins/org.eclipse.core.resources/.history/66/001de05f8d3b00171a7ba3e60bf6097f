@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+class LinkedList
+{
+	private static Node head;
+	static class Node
+	{
+		int data;
+		Node next;
+		Node(int d)
+		{
+			data = d;
+			next = null;
+		}
+	}
+	
+}
+public class PalindromeLinkedList extends LinkedList {
+	public static IsPalindrome(Node node)
+	{
+		boolean _isPalindrome = false;
+		
+		
+		
+		return _isPalindrome;
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+public class StringNonRepeatedChar {
+	public static void NonRepeated(String s)
+	{
+		String[] ss = s.split("");
+	    HashMap<String,Integer> hmap = new HashMap<String, Integer>();
+	    int count =1;
+	    for(String i:ss)
+	    {
+	    	if(hmap.containsKey(i))
+	    	{
+	    	   
+	    		hmap.put(i, count++);
+	    	}
+	    	else
+	    	{
+	    		if(!hmap.containsKey(i))
+	    		{
+	    			
+	    			hmap.put(i, count);
+	    		}
+	    	}
+	    }
+	}
+}
+

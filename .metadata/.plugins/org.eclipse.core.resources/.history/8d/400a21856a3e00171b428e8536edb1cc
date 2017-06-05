@@ -1,0 +1,22 @@
+package managementsoftware;
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+class Threads extends Thread
+{
+	public void run()
+	{
+		try
+		{
+			System.out.println(Thread.currentThread().getId() + "  is running !");
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex.toString());
+		}
+	}
+	
+}
+public class Multithreading {
+
+}

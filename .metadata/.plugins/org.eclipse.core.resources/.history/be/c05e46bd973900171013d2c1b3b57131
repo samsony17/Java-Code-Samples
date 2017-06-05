@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+public class StringNonRepeatedChar {
+	public static void NonRepeated(String s)
+	{
+		String[] ss = s.split("");
+		Set<String> set = new HashSet<String>();
+for(String i:ss)
+{
+	if(!set.contains(i))
+	{
+	 set.add(i);
+
+	}
+	else
+	{
+		System.out.println("Repeated Character" + i);
+		
+	}
+}
+	
+	}
+
+}

@@ -1,0 +1,20 @@
+package managementsoftware;
+
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Stack {
+	private int top;
+	private int[] storage;
+	Stack(int capacity)
+	{
+		if(capacity <0)
+		{
+			throw new IllegalArgumentException("Stacks capacity must be positive");
+		}
+		storage = new int[capacity];
+		top = -1;
+		
+	}
+
+}

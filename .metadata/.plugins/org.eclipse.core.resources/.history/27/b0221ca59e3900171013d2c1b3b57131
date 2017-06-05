@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+public class StringNonRepeatedChar {
+	public static void NonRepeated(String s)
+	{
+		String[] ss = s.split("");
+		HashMap<Integer,String> hmap = new HashMap<Integer,String>();
+for(String i:ss)
+{
+	int count =0;
+	if(!hmap.containsValue(i))
+	{
+	  count =1;
+	 hmap.put(count, i);
+	 count++;
+
+	}
+	else if(hmap.containsValue(i))
+	{
+		
+		hmap.put(count, i);
+	
+	}
+	if(hmap.containsKey(1))
+	{
+		System.out.println("Non repeating character is : "+ hmap.values());
+	}
+}
+	
+	}
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		String s = in.nextLine();
+		NonRepeated(s);
+	}
+
+}

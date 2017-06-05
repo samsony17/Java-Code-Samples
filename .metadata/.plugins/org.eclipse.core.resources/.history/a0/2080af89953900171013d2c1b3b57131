@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class StringReverse {
+	public static void main(String[] args)
+	{
+		String s ="Samson";
+		String[] ss = s.split("");
+		String a ="";
+		for(int i=s.length()+1;i<s.length()+1;i--)
+		{
+			a = a+ss[i];
+		}
+		System.out.println(a);
+		
+	}
+
+}

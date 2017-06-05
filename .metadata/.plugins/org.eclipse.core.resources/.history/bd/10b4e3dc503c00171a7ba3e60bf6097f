@@ -1,0 +1,15 @@
+package managementsoftware;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class DuplicatesOfArray {
+public static void main(String[] args)
+{
+	System.out.println("Enter the elements of the array");
+	Scanner in = new Scanner(System.in);
+	int n = in.nextInt();
+	ArrayList<Integer> arr = new ArrayList<Integer>();
+	arr.add(n);
+	
+}
+}

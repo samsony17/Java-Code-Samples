@@ -1,0 +1,11 @@
+package managementsoftware;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class StackArrays {
+
+	private int top;
+	private int[] storage;
+	
+	
+}

@@ -1,0 +1,82 @@
+package managementsoftware;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+class LinkedList
+{
+	 static Node head;
+	static class Node
+	{
+		int data;
+		Node next;
+		Node(int d)
+		{
+			data =d;
+			next = null;
+		}
+	}
+	public static void PrintList(Node node)
+	{
+		while(node != null)
+		{
+		System.out.println(node.data);
+         node = node.next;
+		}
+	}
+	
+	public void Push(int new_data)
+	{
+		Node node = new Node(new_data);
+
+			node.next = head;
+			head = node;
+
+		
+	}
+	public static int getCount(Node node)
+	{
+		int Count =0;
+		Node current = node;
+		while(current != null)
+		{
+			Count++; 
+			current= current.next;
+			
+		}
+		return Count;
+	}
+	
+	public static void CompareNode (LinkedList list1, LinkedList list2)
+	
+	{
+	
+		
+	}
+}
+
+public class CommonNodeLinkedList extends LinkedList{
+	public static void main(String[] args)
+	{
+		LinkedList list1 = new LinkedList();
+		list1.head = new Node(10);
+		list1.head.next = new Node(20);
+		list1.head.next.next = new Node(50);
+		list1.head.next.next = new Node(100);
+		System.out.println("First List ");
+		list1.PrintList(head);
+		LinkedList list2 = new LinkedList();
+		list2.head = new Node(20);
+		list2.head.next = new Node(30);
+		list2.head.next.next = new Node(100);
+		list2.head.next.next.next = new Node(500);
+		list2.Push(3);
+		System.out.println("Second List");
+		list2.PrintList(head);
+		int listSize = list1.getCount(head);
+		int list2Size = list2.getCount(head);
+		System.out.println(listSize + list2Size);
+	
+		
+	}
+
+}

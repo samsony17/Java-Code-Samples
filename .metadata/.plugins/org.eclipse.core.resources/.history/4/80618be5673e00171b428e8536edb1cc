@@ -1,0 +1,16 @@
+package managementsoftware;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class GenericCollection <T>{
+	T obj ;
+	GenericCollection(T obj)
+	{
+		this.obj = obj;
+	}
+	public T getObject()
+	{
+		return this.obj; 
+	}
+	
+}
